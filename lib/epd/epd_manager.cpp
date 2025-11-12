@@ -118,7 +118,7 @@ void EpdManager::drawWeather(const WeatherData& weather_data) {
         _display.drawBitmap(temp_icon_x, pairs_y - 15, epd_bitmap_small_thermometer,
                             small_icon_size, small_icon_size, GxEPD_BLACK);
         _display.setCursor(temp_text_x - 5, pairs_y + 5);
-        _display.print(round(current_weather.temperature), 1); 
+        _display.print(current_weather.temperature, 1); 
         _display.print("C");
 
         _display.drawBitmap(precip_icon_x - 5, pairs_y - 15, epd_bitmap_small_umbrella,
